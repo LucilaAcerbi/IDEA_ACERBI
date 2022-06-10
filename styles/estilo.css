@@ -279,7 +279,7 @@
         background-color: #050505;
     }
     
-    .atajos figure {
+    .atajoFigure {
         cursor: pointer;
         position: relative;
     }
@@ -295,12 +295,12 @@
         text-align: center;
     }
 
-    .atajos figure:hover> .capa {
+    .atajoFigure:hover> .capa {
         opacity: 1;
         visibility: visible;
     }
 
-    .atajos figure:hover> .capa h4 {
+    .atajoFigure:hover> .capa h4 {
         margin-top: 220px;
         color: #F2F3F4;
         font-family: 'Roboto', sans-serif; 
