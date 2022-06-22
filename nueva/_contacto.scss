@@ -1,0 +1,122 @@
+ /*---------------------CONTACTO MOBILE---------------------*/
+
+ .form {
+    display: none;
+}
+
+.formMobile {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 90%; 
+    height: 50%;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background-color: #F2F3F4;
+    max-width: 300px;
+    padding: 2em 1em;
+    border-radius: 5px;
+    .formTitleMobile {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-left: .8em;
+    }
+    .formContainerMobile {
+        margin-top: 1em;
+        display: grid;
+        gap: .8em;
+        .formItemsMobile {
+            position: relative;
+            color: #050505;
+            .formInputMobile {
+                width: 100%;
+                background: none;
+                color: #212121;
+                font-size: 1rem;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #050505;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+                padding: .3em;
+                margin: 1em 0;
+            }
+        }
+        .formSubmitMobile {
+            background: #212121;
+            color: #F2F3F4;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: .8em 0;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+    }
+}
+
+
+  /*---------------------CONTACTO DESKTOP---------------------*/
+    
+    .formMobile{
+        display: none;
+    }
+    .form {
+        display: block;
+        position: absolute;
+        margin: auto;
+        width: 90%; 
+        height: 60%;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-color: #F2F3F4;
+        max-width: 450px;
+        padding: 4em 3em;
+        border-radius: 5px;
+        background: #e0e0e0;
+        box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+             .formTitle {
+                font-family: 'Roboto', sans-serif;
+                font-size: 2rem;
+                font-weight: 800;
+            }
+            .formContainer {
+                margin-top: 2em;
+                display: grid;
+                gap: 1em;
+                .formItems {
+                    position: relative;
+                    color: #050505;
+                    .formInput {
+                        width: 100%;
+                        background: none;
+                        color: #212121;
+                        font-size: 1rem;
+                        
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid #050505;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 600;
+                        padding: .3em;
+                        margin: 1em 0;
+                    }
+                }
+                .formSubmit {
+                    background: #212121;
+                    color: #F2F3F4;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 650;
+                    padding: .5em 0;
+                    border: none;
+                    border-radius: 5px;
+                    margin-top: 2em;
+                } 
+            }
+    }
+    
+

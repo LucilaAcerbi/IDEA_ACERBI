@@ -1,0 +1,103 @@
+/*mobile*/
+
+.mainDesktop {
+    display: none;
+}
+
+
+/*desktop*/
+
+.hero {
+    background-image: url("../img/Espalda.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    background-color: #050505;
+
+    h1 {
+        color: #F2F3F4;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        margin-top: 2em;
+        font-weight: 10;
+    }
+}
+
+
+
+
+.atajos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". atajoEventos atajoGaleria ."
+                          ". atajoServicios atajoContacto .";
+    gap: 10px;
+    margin-bottom: 2em;
+    background-color: #050505;
+
+    .atajoFigure {
+        cursor: pointer;
+        position: relative;
+
+        .capa {
+            position: absolute;
+            top: 0;
+            width: 500px;
+            height: 500px;
+            background: rgba(99, 111, 114, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+        .imgAtajo {
+            background-color: #212121; 
+            width: 500px;
+            height: 500px;
+        }
+    } 
+}
+
+
+.atajoFigure:hover> .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.atajoFigure:hover> .capa h4 {
+    margin-top: 220px;
+    color: #F2F3F4;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 40px;
+}
+
+#atajoEventos {
+    grid-area: atajoEventos;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#atajoGaleria {
+    grid-area: atajoGaleria;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#atajoServicios {
+    grid-area: atajoServicios;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#atajoContacto {
+    grid-area: atajoContacto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
