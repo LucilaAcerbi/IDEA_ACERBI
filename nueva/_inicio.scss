@@ -1,11 +1,14 @@
 /*mobile*/
 
+@media screen and (max-width:480px) {
+
 .mainDesktop {
     display: none;
 }
-
+}
 
 /*desktop*/
+@media (min-width:1024px) {
 
 .hero {
     background-image: url("../img/Espalda.jpg");
@@ -25,10 +28,6 @@
         font-weight: 10;
     }
 }
-
-
-
-
 .atajos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -100,4 +99,5 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
 }

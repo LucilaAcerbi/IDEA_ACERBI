@@ -1,31 +1,32 @@
 /*---------------------BIOGRAFIA---------------------*/
 
    /* (todavia estoy trabajando esta area)*/
-   
+   @media (min-width:1024px) {
+
    .conteinerBiografia{
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "textoBiografia fotoBiografia"
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "textoBiografia fotoBiografia"
                          "textoBiografia fotoBiografia";
-    position: absolute;
-    margin: auto;
-    width: 90%; 
-    height: 60%;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
-    background-color: #F2F3F4;
-    max-width: 600px;
-    padding: 4em 3em;
-    border-radius: 5px;
-    background: #e0e0e0;
-    box-shadow:  20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
-    .textoBiografia {
-        grid-area: textoBiografia;
-    }
-    .imgBiografia {
-        grid-area: fotoBiografia;
-        
-    } 
-}
+        position: absolute;
+        margin: auto;
+        width: 90%; 
+        height: 60%;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-color: #F2F3F4;
+        max-width: 600px;
+        padding: 4em 3em;
+        border-radius: 5px;
+        background: #e0e0e0;
+        box-shadow:  20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+        .textoBiografia {
+            grid-area: textoBiografia;
+            }
+        .imgBiografia {
+            grid-area: fotoBiografia;
+            } 
+        }
+   }
