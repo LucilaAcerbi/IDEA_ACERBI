@@ -1,0 +1,20 @@
+//Colores
+$white:#F2F3F4 ;
+$lightgray:#CCD1D1 ;
+$gray: #707B7C;
+$darkgray: #424949;
+$black: #050505;
+
+//texts
+$texts:
+    "h1"    2.5rem  600     1.5,
+    "h2"    2rem    500     1.5,
+    "h3"    1rem    bold    1.5,
+    "p"     0.8rem  200;
+
+//MediaQueries
+$breakpoints: (
+    sm: 480px,
+    md: 768px,
+    lg: 1024px,
+);
