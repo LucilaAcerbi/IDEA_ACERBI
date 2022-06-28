@@ -10,20 +10,25 @@
     flex-direction: column;
     color:	$white;
     text-decoration: none;
-        p {
-            font-size: 20px;
+
+        &__h2 {
+            margin-top: 10px;
+        }
+        &__p {
+            font-size: $texts;
         } 
-        .footer__container__iconos{
-            @include center-content;
+        &__iconos{
             list-style: none;
             a {
                 text-decoration: none;
-                border-radius: 5px;
                 .icono {
-                    font-size: 50px;
+                    font-size: 30px;
                     color:	$white;
                     padding: 0 .5em;
-                    margin: .5em 0;
+                    margin-bottom: .3em;
+                }
+                i:hover {
+                    color: $darkgray
                 }
             }
         }

@@ -1,10 +1,9 @@
 @import "./variables";
 
 @each $tipo, $size, $weight, $height in $texts {
-    .text-#($tipo) {
+    .text-#{$tipo} {
         font-size: $size;
         font-weight: $weight;
-        font-height: $height;
-
+        line-height: $height;
     }
 }
