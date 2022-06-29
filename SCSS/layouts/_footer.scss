@@ -10,7 +10,8 @@
     flex-direction: column;
     color:	$white;
     text-decoration: none;
-
+    position: absolute;
+    width: 100%;
         &__h2 {
             margin-top: 10px;
         }

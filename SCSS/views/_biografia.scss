@@ -1,14 +1,10 @@
-/*---------------------BIOGRAFIA---------------------*/
-
-   /* (todavia estoy trabajando esta area)*/
-   @media (min-width:1024px) {
 
    .conteinerBiografia{
         display: grid;
         grid-template-columns: 2fr;
         grid-template-rows: 1fr;
         grid-template-areas: "textoBiografia fotoBiografia"
-                         "textoBiografia fotoBiografia";
+                            "textoBiografia fotoBiografia";
         position: absolute;
         margin: auto;
         width: 90%; 
@@ -27,6 +23,21 @@
             }
         .imgBiografia {
             grid-area: fotoBiografia;
+            margin-top: 60px;
             } 
+
+            @include breakpoint(md) {
+                grid-template-areas: "fotoBiografia fotoBiografia"
+                            "textoBiografia textoBiografia";
+                padding: 1em 1em;
+                min-height: 600px;
+
+                .textoBiografia {
+                    margin: 20px 10px 30px 20px;
+                    }
+
+                .imgBiografia {
+                    margin: 10px 0 0 170px;
+                } 
+            }
         }
-   }

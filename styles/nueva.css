@@ -15,6 +15,10 @@ html {
   box-sizing: border-box;
 }
 
+main {
+  min-height: 100vh;
+}
+
 .text-h1 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -47,6 +51,10 @@ html {
 html {
   font-family: "Abel", sans-serif;
   box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
 }
 
 .navbar-light {
@@ -83,6 +91,10 @@ html {
   box-sizing: border-box;
 }
 
+main {
+  min-height: 100vh;
+}
+
 .footer {
   background-color: #050505;
   display: flex;
@@ -91,6 +103,8 @@ html {
   flex-direction: column;
   color: #F2F3F4;
   text-decoration: none;
+  position: absolute;
+  width: 100%;
 }
 .footer__h2 {
   margin-top: 10px;
@@ -173,7 +187,6 @@ html {
   opacity: 0;
   visibility: hidden;
   align-items: center;
-  border-radius: 10px;
 }
 @media (max-width: 768px) {
   .container_atajos .atajo__figure .atajo__figure-capa {
@@ -184,14 +197,12 @@ html {
     opacity: 0;
     visibility: hidden;
     align-items: center;
-    border-radius: 10px;
   }
 }
 .container_atajos .atajo__figure .atajo__figure-img {
   background-color: #050505;
   width: 400px;
   height: 400px;
-  border-radius: 10px;
   align-items: center;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
@@ -201,7 +212,6 @@ html {
     width: 250px;
     height: 250px;
     align-items: center;
-    border-radius: 10px;
     align-items: center;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
@@ -352,33 +362,43 @@ html {
     margin-top: 2em;
   }
 }
-/*---------------------BIOGRAFIA---------------------*/
-/* (todavia estoy trabajando esta area)*/
-@media (min-width: 1024px) {
+.conteinerBiografia {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "textoBiografia fotoBiografia" "textoBiografia fotoBiografia";
+  position: absolute;
+  margin: auto;
+  width: 90%;
+  height: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #F2F3F4;
+  max-width: 600px;
+  padding: 4em 3em;
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.conteinerBiografia .textoBiografia {
+  grid-area: textoBiografia;
+}
+.conteinerBiografia .imgBiografia {
+  grid-area: fotoBiografia;
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
   .conteinerBiografia {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "textoBiografia fotoBiografia" "textoBiografia fotoBiografia";
-    position: absolute;
-    margin: auto;
-    width: 90%;
-    height: 60%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #F2F3F4;
-    max-width: 600px;
-    padding: 4em 3em;
-    border-radius: 5px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    grid-template-areas: "fotoBiografia fotoBiografia" "textoBiografia textoBiografia";
+    padding: 1em 1em;
+    min-height: 600px;
   }
   .conteinerBiografia .textoBiografia {
-    grid-area: textoBiografia;
+    margin: 20px 10px 30px 20px;
   }
   .conteinerBiografia .imgBiografia {
-    grid-area: fotoBiografia;
+    margin: 10px 0 0 170px;
   }
 }/*# sourceMappingURL=nueva.css.map */
