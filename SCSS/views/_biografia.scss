@@ -1,43 +1,57 @@
 
-   .conteinerBiografia{
+   @import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100;400&display=swap');
+   
+   .conteinerBiografia {
         display: grid;
         grid-template-columns: 2fr;
         grid-template-rows: 1fr;
         grid-template-areas: "textoBiografia fotoBiografia"
                             "textoBiografia fotoBiografia";
-        position: absolute;
         margin: auto;
+        margin-top: 100px;
         width: 90%; 
         height: 60%;
         left: 0; right: 0;
         top: 0; bottom: 0;
-        background-color: #F2F3F4;
+        background-color: $white;
         max-width: 600px;
         padding: 4em 3em;
         border-radius: 5px;
-        background: #e0e0e0;
         box-shadow:  20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
+        gap: 30px;
+
         .textoBiografia {
             grid-area: textoBiografia;
+            text-align: justify;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
             }
+
         .imgBiografia {
             grid-area: fotoBiografia;
-            margin-top: 60px;
+            margin-top: 50px;
+        }
+
+        @include breakpoint(md) {
+            grid-template-areas: "fotoBiografia fotoBiografia"
+                                    "textoBiografia textoBiografia";
+            padding: 1em 1em;
+            min-height: 600px;
+
+            .textoBiografia {
+                margin: 20px 10px 30px 20px;
+            }
+
+            .imgBiografia {
+                margin: 10px 0 0 170px;
             } 
+        }
 
-            @include breakpoint(md) {
-                grid-template-areas: "fotoBiografia fotoBiografia"
-                            "textoBiografia textoBiografia";
-                padding: 1em 1em;
-                min-height: 600px;
-
-                .textoBiografia {
-                    margin: 20px 10px 30px 20px;
-                    }
-
-                .imgBiografia {
-                    margin: 10px 0 0 170px;
-                } 
+        @include breakpoint(sm) {
+            .imgBiografia {
+                margin: 10px 0 0 100px;
             }
         }
+        
+    }

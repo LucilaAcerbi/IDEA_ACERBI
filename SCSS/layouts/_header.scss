@@ -1,27 +1,35 @@
 @import "../base/variables";
 @import "../base/generales";
 
-.navbar-light {
-    background-color: $black;
-    padding: 0;
+header {
+    .navbar{
+        background-color: $black;
+        padding: 0;
 
-    .container-fluid{
-        padding: 0; 
-    }
-}
-#navbarNav{
-    justify-content: center;
-    margin: 0 0 5px 0;
-    padding: 0;
-    background-color: $black;
+        .container-fluid{
+            padding: 0; 
+            background-color: $black;
+            }
+
+            .navbar-toggler{
+                background-color: $darkgray;
+            }
+        }
+
+    #navbarNav{
+        justify-content: center;
+        margin: 0 0 5px 0;
+        padding: 0;
+        background-color: $black;
     
-    li {
-        font-size: 25px;
-        font-weight: 100;
-        padding: 0 10px 0 10px;
+        li {
+            font-size: 25px;
+            font-weight: 300;
+            padding: 0 10px 0 10px;
 
-        a {
-            color: $white
+            a {
+                color: $white;
+            }
         }
     }
 }

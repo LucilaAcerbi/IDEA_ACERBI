@@ -1,14 +1,12 @@
-//base
 @import "./base/generales";
 @import "./base/variables";
 @import "./base/mixins";
 @import "./base/utilities";
 
-//layouts
 @import "./layouts/header";
 @import "./layouts/footer";
 
-//views
 @import "./views/inicio";
 @import "./views/contacto";
 @import "./views/biografia";
+@import "./views/galeria";

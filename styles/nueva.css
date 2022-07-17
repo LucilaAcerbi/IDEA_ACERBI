@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100;400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -57,26 +61,29 @@ main {
   min-height: 100vh;
 }
 
-.navbar-light {
+header .navbar {
   background-color: #050505;
   padding: 0;
 }
-.navbar-light .container-fluid {
+header .navbar .container-fluid {
   padding: 0;
+  background-color: #050505;
 }
-
-#navbarNav {
+header .navbar .navbar-toggler {
+  background-color: #424949;
+}
+header #navbarNav {
   justify-content: center;
   margin: 0 0 5px 0;
   padding: 0;
   background-color: #050505;
 }
-#navbarNav li {
+header #navbarNav li {
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 300;
   padding: 0 10px 0 10px;
 }
-#navbarNav li a {
+header #navbarNav li a {
   color: #F2F3F4;
 }
 
@@ -132,29 +139,36 @@ main {
   background-image: url("../img/Espalda.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
   background-color: #050505;
+  margin-bottom: 2em;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .hero {
-    background-size: contain;
-    height: 40vh;
+    height: 60vh;
   }
 }
 .hero h1 {
   color: #F2F3F4;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
+  font-weight: 50;
   margin-top: 2em;
-  font-weight: 10;
 }
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 35px;
-    font-weight: 10;
+    font-size: 50px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 0.5em;
   }
 }
 
@@ -162,6 +176,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2em;
 }
 @media (max-width: 768px) {
   .container_atajos {
@@ -183,20 +198,26 @@ main {
   top: 0;
   width: 400px;
   height: 400px;
-  background: rgba(99, 111, 114, 0.6);
+  background: rgba(56, 61, 63, 0.6);
   opacity: 0;
   visibility: hidden;
   align-items: center;
 }
 @media (max-width: 768px) {
   .container_atajos .atajo__figure .atajo__figure-capa {
-    position: absolute;
     width: 250px;
     height: 250px;
-    background: rgba(99, 111, 114, 0.6);
-    opacity: 0;
-    visibility: hidden;
-    align-items: center;
+    visibility: visible;
+    opacity: inherit;
+    background: #050505;
+  }
+  .container_atajos .atajo__figure .atajo__figure-capa h3 {
+    text-align: center;
+    margin-top: 100px;
+    color: #F2F3F4;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
   }
 }
 .container_atajos .atajo__figure .atajo__figure-img {
@@ -208,12 +229,8 @@ main {
 }
 @media (max-width: 768px) {
   .container_atajos .atajo__figure .atajo__figure-img {
-    background-color: #050505;
     width: 250px;
     height: 250px;
-    align-items: center;
-    align-items: center;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -224,151 +241,89 @@ main {
 
 .atajo__figure:hover > .atajo__figure-capa h3 {
   text-align: center;
-  margin-top: 180px;
+  margin-top: 170px;
   color: #F2F3F4;
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: 300;
 }
 @media (max-width: 768px) {
   .atajo__figure:hover > .atajo__figure-capa h3 {
-    text-align: center;
-    margin-top: 110px;
-    color: #F2F3F4;
-    font-family: "Roboto", sans-serif;
+    margin-top: 60px;
     font-size: 20px;
+    color: #CCD1D1;
+  }
+}
+@media (max-width: 480px) {
+  .atajo__figure:hover > .atajo__figure-capa h3 {
+    margin-top: 50px;
+    font-size: 25px;
   }
 }
 
-/*---------------------CONTACTO MOBILE---------------------*/
-@media screen and (max-width: 480px) {
-  .form {
-    display: none;
-  }
-
-  .formMobile {
-    display: block;
-    position: absolute;
-    margin: auto;
-    width: 90%;
-    height: 50%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #F2F3F4;
-    max-width: 300px;
-    padding: 2em 1em;
-    border-radius: 5px;
-  }
-  .formMobile .formTitleMobile {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-left: 0.8em;
-  }
-  .formMobile .formContainerMobile {
-    margin-top: 1em;
-    display: grid;
-    gap: 0.8em;
-  }
-  .formMobile .formContainerMobile .formItemsMobile {
-    position: relative;
-    color: #050505;
-  }
-  .formMobile .formContainerMobile .formItemsMobile .formInputMobile {
-    width: 100%;
-    background: none;
-    color: #212121;
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #050505;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    padding: 0.3em;
-    margin: 1em 0;
-  }
-  .formMobile .formContainerMobile .formSubmitMobile {
-    background: #212121;
-    color: #F2F3F4;
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0.8em 0;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1em;
-  }
+.form {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  height: 70%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #F2F3F4;
+  max-width: 450px;
+  padding: 4em 3em;
+  border-radius: 5px;
+  box-shadow: 20px 20px 60px #CCD1D1, -20px -20px 60px #ffffff;
 }
-/*---------------------CONTACTO DESKTOP---------------------*/
-@media (min-width: 1024px) {
-  .formMobile {
-    display: none;
-  }
-
-  .form {
-    display: block;
-    position: absolute;
-    margin: auto;
-    width: 90%;
-    height: 60%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #F2F3F4;
-    max-width: 450px;
-    padding: 4em 3em;
-    border-radius: 5px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  }
-  .form .formTitle {
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-  }
-  .form .formContainer {
-    margin-top: 2em;
-    display: grid;
-    gap: 1em;
-  }
-  .form .formContainer .formItems {
-    position: relative;
-    color: #050505;
-  }
-  .form .formContainer .formItems .formInput {
-    width: 100%;
-    background: none;
-    color: #212121;
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #050505;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    padding: 0.3em;
-    margin: 1em 0;
-  }
-  .form .formContainer .formSubmit {
-    background: #212121;
-    color: #F2F3F4;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 650;
-    padding: 0.5em 0;
-    border: none;
-    border-radius: 5px;
-    margin-top: 2em;
-  }
+.form .formTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
 }
+.form .formContainer {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.form .formContainer .formItems {
+  position: relative;
+  color: #050505;
+}
+.form .formContainer .formItems .formInput {
+  width: 100%;
+  background: none;
+  color: #212121;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #050505;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.3em;
+  margin: 1em 0;
+}
+.form .formContainer .formSubmit {
+  background: #212121;
+  color: #F2F3F4;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5em 0;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
 .conteinerBiografia {
   display: grid;
   grid-template-columns: 2fr;
   grid-template-rows: 1fr;
   grid-template-areas: "textoBiografia fotoBiografia" "textoBiografia fotoBiografia";
-  position: absolute;
   margin: auto;
+  margin-top: 100px;
   width: 90%;
   height: 60%;
   left: 0;
@@ -379,15 +334,18 @@ main {
   max-width: 600px;
   padding: 4em 3em;
   border-radius: 5px;
-  background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  gap: 30px;
 }
 .conteinerBiografia .textoBiografia {
   grid-area: textoBiografia;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 .conteinerBiografia .imgBiografia {
   grid-area: fotoBiografia;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 @media (max-width: 768px) {
   .conteinerBiografia {
@@ -401,4 +359,30 @@ main {
   .conteinerBiografia .imgBiografia {
     margin: 10px 0 0 170px;
   }
+}
+@media (max-width: 480px) {
+  .conteinerBiografia .imgBiografia {
+    margin: 10px 0 0 100px;
+  }
+}
+
+#galeria {
+  margin-bottom: 100px;
+}
+#galeria h1 {
+  font-family: "Roboto", sans-serif;
+}
+#galeria img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#galeria .col-lg-4 {
+  margin: 0;
+  padding: 25px;
+  transition: 0.5 all ease-in-out;
+}
+#galeria img:hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=nueva.css.map */
