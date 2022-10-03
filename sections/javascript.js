@@ -1,5 +1,7 @@
+
+// Evento enviar formulario 
+
 const boton = document.getElementById ('btnEnviar');
-// console.log (boton);
 
 boton.addEventListener ('submit', (event) => {
     event.preventDefault();
@@ -9,3 +11,13 @@ boton.addEventListener ('submit', (event) => {
     
     console.log(userName, email, mensage);
 });
+
+
+// Evento mostrar clicks en icono instagram
+
+const click = document.getElementById ('instagram');
+
+click.addEventListener ('click', (event) =>{
+    event.preventDefault();
+    console.log (click);
+})
