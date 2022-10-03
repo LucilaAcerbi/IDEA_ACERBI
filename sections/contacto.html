@@ -38,15 +38,15 @@
             <p class="formTitle">Formulario de contacto</p>
             <div class="formContainer">
                 <div class="formItems">
-                    <input type="text" name="nombre_apellido" class="formInput" placeholder="Nombre y Apellido">
+                    <input type="text" name="nombre_apellido" class="formInput userName" placeholder="Nombre y Apellido" required>
                 </div>
                 <div class="formItems">
-                    <input type="text" name="e-mail" class="formInput" placeholder="E-mail">
+                    <input type="text" name="e-mail" class="formInput email" placeholder="E-mail" required>
                 </div>
                 <div class="formItems">
-                    <input type="text" name="mensaje" class="formInput" placeholder="Deja un mensaje">
+                    <input type="text" name="mensaje" class="formInput mensage" placeholder="Deja un mensaje" required>
                 </div>
-                <input type="submit" value="enviar formulario" class="formSubmit">
+                <input type="submit" value="enviar formulario" class="formSubmit" id="btnEnviar">
             </div>
         </form>
     </main>
@@ -61,6 +61,7 @@
         <p class="text-p footer__p">Teléfono: +54 3516571309</p>         
     </footer>
 
+    <script src="javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
