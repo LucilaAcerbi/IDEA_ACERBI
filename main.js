@@ -9,3 +9,4 @@ btn.addEventListener ('click', () => {
         timer: 1500
     });
 })
+
