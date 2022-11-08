@@ -2,6 +2,7 @@ const form = document.getElementById ('form');
 const user = document.getElementById ('user_name');
 const email = document.getElementById ('e-mail');
 const message = document.getElementById ('message');
+const btn = document.getElementById ('btnEnviar');
 
 const sendEmail = async (body) => {
     const settings = {
@@ -32,15 +33,14 @@ form.addEventListener('submit', (e) => {
 
     sendEmail(body)
 })
-
-        
-// btn.addEventListener ('click', () => {
-//     Swal.fire({
-//         icon: 'success',
-//         title: '<b>Mensaje enviado<b>',
-//         text: 'Revisa tu casilla, te contactaremos',
-//         showConfirmButton: false, 
-//         timer: 1500
-//     });
-// })
+     
+btn.addEventListener ('click', () => {
+    Swal.fire({
+        icon: 'success',
+        title: '<b>Mensaje enviado<b>',
+        text: 'Revisa tu casilla, te contactaremos',
+        showConfirmButton: false, 
+        timer: 1500
+    });
+})
 
